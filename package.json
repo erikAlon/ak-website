@@ -1,9 +1,9 @@
 {
   "name": "gatsby-starter-default",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "AK Gatsby Site!",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Dante de Leon Alonso <danteinteractions@gmail.com",
   "dependencies": {
     "bootstrap": "^4.3.1",
     "gatsby": "^2.1.18",
@@ -20,6 +20,10 @@
     "react-dom": "^16.8.3",
     "react-helmet": "^5.2.0"
   },
+  "engines": {
+    "node": "",
+    "yarn": ""
+  },
   "devDependencies": {
     "prettier": "^1.16.4"
   },
@@ -29,16 +33,10 @@
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
+    "heroku-postbuild": "gatsby build",
+    "start": "gatsby serve",
     "develop": "gatsby develop",
-    "format": "prettier --write src/**/*.{js,jsx}",
-    "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\"",
-    "heroku-postbuild": "gatsby build"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
-  },
-  "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "format": "prettier --trailing-comma es5 --no-semi --single-quote --write \"src/**/*.js\"",
+    "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""
   }
 }
