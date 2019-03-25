@@ -1,0 +1,9 @@
+.breadcrumb {
+  background-color: initial;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.breadcrumb-item a {
+  text-decoration: none;
+}
