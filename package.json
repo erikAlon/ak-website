@@ -21,8 +21,8 @@
     "react-helmet": "^5.2.0"
   },
   "engines": {
-    "node": "",
-    "yarn": ""
+    "node": "^11.6.0",
+    "yarn": "^1.13.0"
   },
   "devDependencies": {
     "prettier": "^1.16.4"
