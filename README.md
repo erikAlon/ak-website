@@ -159,7 +159,7 @@ Web development ideas and points. <br />
 
 > Bugs
 
-- add link to index.html after each develop
+- add link, SDK to index.html after each develop
 
 < link
 rel="stylesheet"
@@ -167,6 +167,7 @@ href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
 integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
 crossorigin="anonymous"
 />
+< script src="https://connect.soundcloud.com/sdk/sdk-3.3.2.js"></script>
 
 # 🎧\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_🎧\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_🎧
 
