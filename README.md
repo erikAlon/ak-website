@@ -179,3 +179,9 @@ crossorigin="anonymous"
 | Apollo       |
 | graphql-yoga |
 | Heroku       |
+
+| Jamstack   |
+| ---------- |
+| Javascript |
+| APIs       |
+| Markdown   |
