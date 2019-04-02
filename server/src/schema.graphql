@@ -1,14 +1,19 @@
 type Query {
   info: String!
-  tweets: [Tweet!]!
+  user_tweets: [Tweet!]!
+  test_dog: Dog!
 }
 
 type Tweet {
-  text: String!
+  text: String
   user: User!
 }
 
 type User {
   name: String!
   profile_image_url: String!
+}
+
+type Dog {
+  message: [String!]!
 }

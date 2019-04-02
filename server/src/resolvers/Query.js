@@ -1,11 +1,21 @@
-async function tweets(parent, args, context, info) {
+const fetch = require("node-fetch")
+require("dotenv").config()
 
-    // GET timeline using twitter API
-    const tweetList = await 
+const USER1 = "erikalon12"
+const USER2 = ""
+const GET_TIMELINE = `https://api.twitter.com/1.1/statuses/user_timeline.json?screen_name=${USER1}`
 
-    return tweetList;
+// GET timeline using twitter API
+async function user_tweets() {
+  const tweetList = await fetch(GET_TIMELINE, {
+    headers: {
+      Authorization: `Bearer ${process.env.TWITTER_API}`,
+    },
+  }).then(res => res.json())
+
+  return tweetList
 }
 
 module.exports = {
-    tweets
+  user_tweets,
 }
