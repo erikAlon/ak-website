@@ -14,6 +14,8 @@ const server = new GraphQLServer({
 
 server.start(() =>
   console.log(
-    "AK webapp twitter graphql server running on http://localhost:4000"
+    `AK webapp twitter graphql server running on http://localhost:${
+      process.env.PORT
+    }`
   )
 )
