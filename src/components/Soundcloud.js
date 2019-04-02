@@ -2,10 +2,10 @@ import React from "react"
 import { StaticQuery, graphql } from "gatsby"
 import "./Soundcloud.css"
 
-const Player = url => {
-  // Fetch stream url
-  // stream/ pause track url on click
-}
+// const Player = url => {
+//   // Fetch stream url
+//   // stream/ pause track url on click
+// }
 
 export default () => (
   <StaticQuery

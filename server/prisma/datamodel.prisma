@@ -1,0 +1,9 @@
+type Tweet {
+  text: String!
+  user: User!
+}
+
+type User {
+  name: String!
+  profile_image_url: String!
+}
