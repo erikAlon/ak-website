@@ -2,8 +2,8 @@ const fetch = require("node-fetch")
 require("dotenv").config()
 
 const USER1 = "erikalon12"
-const USER2 = ""
-const GET_TIMELINE = `https://api.twitter.com/1.1/statuses/user_timeline.json?screen_name=${USER1}`
+const USER2 = "SethMonroy"
+const GET_TIMELINE = `https://api.twitter.com/1.1/statuses/user_timeline.json?screen_name=${USER2}`
 
 // GET timeline using twitter API
 async function user_tweets() {
