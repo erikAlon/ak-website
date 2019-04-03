@@ -1,5 +1,4 @@
 type Query {
-  info: String!
   user_tweets: [Tweet!]!
   test_dog: Dog!
 }

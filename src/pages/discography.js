@@ -15,8 +15,8 @@ const Discography = () => (
       <div class="soundcloud">
         <Soundcloud />
       </div>
-      <div class="insta">Insta</div>
-      <div class="blog">blog</div>
+      <div class="insta">Instagram carousel goes here</div>
+      <div class="blog">Blog posts from DB go here</div>
     </div>
   </Layout>
 )
