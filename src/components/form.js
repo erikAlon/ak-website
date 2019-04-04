@@ -27,6 +27,9 @@ const Email = () => (
   <Form.Group controlId="formEmail">
     <Form.Label>Email Address</Form.Label>
     <Form.Control size="sm" type="email" />
+    <Form.Text className="text-muted">
+      Your email is encrypted and not shared.
+    </Form.Text>
   </Form.Group>
 )
 
@@ -93,8 +96,18 @@ const File = () => (
   <Form.Group controlId="formPostal">
     <Form.Label>File Format</Form.Label>
     <Form.Control size="sm" as="select">
-      <option />
+      <option>-other-</option>
+      <option>Pro Tools</option>
+      <option>Logic</option>
+      <option>Ableton</option>
+      <option>Raw Files</option>
+      <option>FL Studio</option>
+      <option>Reason</option>
+      <option>Garage Band</option>
     </Form.Control>
+    <Form.Text className="text-muted">
+      If -other- is selected, please specify with additional notes.
+    </Form.Text>
   </Form.Group>
 )
 
