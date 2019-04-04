@@ -1,6 +1,6 @@
 type Query {
   user_tweets: [Tweet!]!
-  test_dog: Dog!
+  get_states: Territories!
 }
 
 type Tweet {
@@ -13,6 +13,12 @@ type User {
   profile_image_url: String!
 }
 
-type Dog {
-  message: [String!]!
+type Territories {
+  count: Int!
+  states: [State!]!
+}
+
+type State {
+  name: String!
+  abbreviation: String!
 }

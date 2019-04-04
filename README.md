@@ -1,6 +1,8 @@
-> Goals
+# 🎧\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_🎧\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_🎧\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_🎧
 
-- Create Among Korruption website
+# Goals
+
+- Create Among Kuruption website
 
   - | Page               | Feature                                                                      |
     | ------------------ | ---------------------------------------------------------------------------- |
@@ -8,8 +10,9 @@
     | Biography          | Introduction with facts and wikipedia intro                                  |
     | Discography / Blog | Track listings in chronological order and current news                       |
     | Gallery            | Album from/ to Instagram, Facebook, any other social media platform as album |
+    | Contact            | Mix and master form with audio file submission                               |
 
-    **Scroll down to notes for more details**
+    **Scroll down to notes for more details under Notes section**
 
 - Create a management interface
 
@@ -33,9 +36,9 @@
 - Upkeep AK Wikipedia, Facebook, Instagram with website info
   - (❓ Manual data entry for non developer role)
 
-# 🎧\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_🎧\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_🎧
+# 🎧\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_🎧\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_🎧\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_🎧
 
-> Notes
+# Notes
 
 - ~~Data access to social media activity tied to one account~~
 
@@ -43,13 +46,11 @@
 
 - ~~Custom website name and domain~~
 
----
-
-## Page: Merchandise
+### Page: Merchandise
 
 - This will be a proprietary merch store like application where any user can shop for brand labeled things.
 
-### Back
+#### Back
 
 - Pull merch from {google photos/ instagram} and load to page:
   - On load query:
@@ -65,34 +66,35 @@
 ** I have a cart instance <br/>
 ** Authenticated guest to keep track of purchases {with facebook login/ jws login token from verified credentials} <br/>
 
-### Front
+#### Front
 
 - img:
+
   - merchandise
+
     - div:
       - price
       - description
     - button:
+
       - add to cart
       - quantity to add to cart
+
         - div:
+
           - quantity
 
----
-
-## Page: Biography
+### Page: Biography
 
 > About page for AK
 
----
-
-## Page: Discography + Blog (Social media hub)
+### Page: Discography + Blog (Social media hub)
 
 > Tracks should exist in the cloud in multiple streaming services like SoundCloud and Youtube Music. These tracks will be featured using API integration on the website.
 
 > This section can contain a text area with locally hosted content or embedded content from other sites. Should have a comments section if guests are authenticated through Facebook for example.
 
-### Back
+#### Back
 
 - On page load
   - Query feedSC for playlist
@@ -106,7 +108,7 @@
 - On scroll to blog tag
   - pull from database
 
-### Front
+#### Front
 
 - ul:
   - li:
@@ -138,13 +140,41 @@
 
 \*\* Instagram (horizontal), Twitter (vertical), Soundcloud (vertical)) feed + Blog post feed
 
----
-
-## Page: Gallery
+### Page: Gallery
 
 > Should display an album that enlarge pictures when mouse hoovers over them or are tapped.
 
-# 🎧\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_🎧\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_🎧
+### Page: Contact
+
+> Form uses google drive to intake file uploads and allows producer to send download links via google drive and gmail business account
+
+#### Back
+
+- On form submit
+  - Mutate file posting on server
+    - Convert to audio/ogg format
+    - POST/ UPDATE audio file to google drive
+
+#### Front
+
+- (Use modal to announce submission complete)
+
+  - (Refresh page)
+
+- div:
+  - h1:
+    - outro
+  - h1:
+    - menu
+  - form:
+    - input fields
+    - button
+- div:
+  - Background image of producer
+
+# 🎧\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_🎧\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_🎧\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_🎧
+
+# AK web app specifics
 
 Web development ideas and points. <br />
 • Merch, Includes shirts, hoodies, hats and stickers with photo representation. Would like to have items with multiple photos that can be clicked to the next photos. Also includes a link that can be used as a ‘add to cart' function.✔️<br />
@@ -155,34 +185,30 @@ Web development ideas and points. <br />
 • Specific page for pricing for “mixing and mastering” reference page ; http://www.breweryrecording.com/mixing.html<br />
 • 24 and 48 track mix/master selections only.<br />
 
-# 🎧\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_🎧\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_🎧
+# 🎧\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_🎧\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_🎧\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_🎧
 
-> Bugs
+# Bugs
 
-- add link, SDK to index.html after each develop
+- Do I need the following script? (Maybe not)
+  < script src="https://connect.soundcloud.com/sdk/sdk-3.3.2.js"></ script>
 
-< link
-rel="stylesheet"
-href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
-integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
-crossorigin="anonymous"
-/>
-< script src="https://connect.soundcloud.com/sdk/sdk-3.3.2.js"></script>
+# 🎧\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_🎧\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_🎧\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_🎧
 
-# 🎧\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_🎧\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_🎧
+# Full stack development
 
-| Stack        |
-| ------------ |
-| React        |
-| Gatsby       |
-| Bootstrap    |
-| GraphQL      |
-| Apollo       |
-| graphql-yoga |
-| Heroku       |
+| Tech used       |
+| --------------- |
+| React           |
+| Gatsby          |
+| react-bootstrap |
+| GraphQL         |
+| Apollo          |
+| graphql-yoga    |
+| express         |
+| Heroku          |
+| Netlify         |
+| Google Drive    |
+| Twitter         |
+| Soundcloud      |
 
-| Jamstack   |
-| ---------- |
-| Javascript |
-| APIs       |
-| Markdown   |
+# 🎧\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_🎧\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_🎧\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_🎧
