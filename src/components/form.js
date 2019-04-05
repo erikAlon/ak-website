@@ -1,6 +1,6 @@
 import React from "react"
 import { StaticQuery, graphql } from "gatsby"
-import { Button, Form } from "react-bootstrap"
+import { Button, Form, Jumbotron, Container } from "react-bootstrap"
 
 const Contact = () => (
   <Form.Group controlId="formContactName">
@@ -94,7 +94,7 @@ const Postal = () => (
 
 const File = () => (
   <Form.Group controlId="formPostal">
-    <Form.Label>File Format</Form.Label>
+    <Form.Label>File Format returned to you</Form.Label>
     <Form.Control size="sm" as="select">
       <option>-other-</option>
       <option>Pro Tools</option>
@@ -146,6 +146,13 @@ export default () => (
     <State />
     <Postal />
     <File />
+    <Jumbotron fluid>
+      <Container>
+        <h1>File Upload</h1>
+        <br />
+        <h6>(Click here)</h6>
+      </Container>
+    </Jumbotron>
     <Count />
     <Notes />
 

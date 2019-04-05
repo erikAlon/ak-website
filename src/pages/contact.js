@@ -2,7 +2,7 @@ import React from "react"
 
 import Layout from "../components/layout"
 import "./contact.css"
-import ContactForm from "../components/form"
+import ContactForm from "../components/Form"
 
 const Contact = () => (
   <Layout>
@@ -10,7 +10,6 @@ const Contact = () => (
       <div class="left">
         <h1>Outro</h1>
         <h1>Mixing and mastering details</h1>
-
         <ContactForm />
       </div>
 
