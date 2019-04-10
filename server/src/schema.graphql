@@ -4,13 +4,7 @@ type Query {
 }
 
 type Mutation {
-  post(file: !, filename: String!): File!
-}
-
-type File {
-  id: ID!
-  file: !
-  filename: String!
+  
 }
 
 type Tweet {

@@ -3,14 +3,20 @@ import React from "react"
 import Layout from "../components/layout"
 
 import "./discography.css"
+import Soundcloud from "../components/Soundcloud"
+import Twitter from "../components/Twitter"
 
 const Discography = () => (
   <Layout>
     <div class="disco">
-      <div class="tweet">tweet</div>
-      <div class="soundcloud">sc</div>
-      <div class="insta">insta</div>
-      <div class="blog">blog</div>
+      <div class="tweet">
+        <Twitter />
+      </div>
+      <div class="soundcloud">
+        <Soundcloud />
+      </div>
+      <div class="insta">Carousel placeholder</div>
+      <div class="blog">Blog placeholder</div>
     </div>
   </Layout>
 )

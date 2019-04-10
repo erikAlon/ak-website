@@ -6,6 +6,22 @@ module.exports = {
     client: `Among Kuruption`,
   },
   plugins: [
+    {
+      resolve: "gatsby-source-graphql",
+      options: {
+        typeName: "SCAPI",
+        fieldName: "soundcloudapi",
+        url: "https://ak-webapp-graphql.herokuapp.com/graphql",
+      },
+    },
+    {
+      resolve: "gatsby-source-graphql",
+      options: {
+        typeName: "TAPI",
+        fieldName: "twitterapi",
+        url: "https://twitter-graphql.herokuapp.com/",
+      },
+    },
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
