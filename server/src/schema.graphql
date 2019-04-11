@@ -3,10 +3,6 @@ type Query {
   get_states: Territories!
 }
 
-type Mutation {
-  
-}
-
 type Tweet {
   text: String
   user: User!

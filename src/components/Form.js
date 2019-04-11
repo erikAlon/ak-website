@@ -1,6 +1,7 @@
 import React from "react"
 import { StaticQuery, graphql } from "gatsby"
 import { Button, Form, Jumbotron, Container } from "react-bootstrap"
+import UploadFile from "./UploadFile"
 
 const Contact = () => (
   <Form.Group controlId="formContactName">
@@ -150,7 +151,7 @@ export default () => (
       <Container>
         <h1>File Upload</h1>
         <br />
-        <h6>(Click here)</h6>
+        <UploadFile />
       </Container>
     </Jumbotron>
     <Count />

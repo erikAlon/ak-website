@@ -5,8 +5,11 @@
   "version": "0.1.0",
   "author": "Dante de Leon Alonso <danteinteractions@gmail.com",
   "dependencies": {
+    "apollo-cache-inmemory": "^1.5.1",
+    "apollo-client": "^2.5.1",
     "apollo-upload-client": "^10.0.0",
     "bootstrap": "^4.3.1",
+    "cross-fetch": "^3.0.2",
     "gatsby": "^2.1.18",
     "gatsby-image": "^2.0.30",
     "gatsby-plugin-manifest": "^2.0.19",
@@ -16,8 +19,10 @@
     "gatsby-source-filesystem": "^2.0.23",
     "gatsby-source-graphql": "^2.0.15",
     "gatsby-transformer-sharp": "^2.1.14",
+    "graphql-tag": "^2.10.1",
     "prop-types": "^15.7.2",
     "react": "^16.8.3",
+    "react-apollo": "^2.5.4",
     "react-bootstrap": "^1.0.0-beta.5",
     "react-dom": "^16.8.3",
     "react-helmet": "^5.2.0"
