@@ -23,23 +23,9 @@ const Layout = ({ children }) => (
       <div className="layout">
         <div className="layout--overlay" />
         <Header siteTitle={data.site.siteMetadata.title} />
-        <div
-          style={{
-            margin: `0 auto`,
-            maxWidth: 960,
-            padding: `0px 1.0875rem 1.45rem`,
-            paddingTop: 0,
-            color: "white",
-          }}
-        >
+        <div className="layout__main">
           <main>{children}</main>
-          <footer
-            style={{
-              fontSize: ".75rem",
-              color: "#B17E0B",
-              textAlign: "center",
-            }}
-          >
+          <footer className="layout__foot">
             © {new Date().getFullYear()}, {data.site.siteMetadata.client} |{" "}
             {data.site.siteMetadata.author}
           </footer>

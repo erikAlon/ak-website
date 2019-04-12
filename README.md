@@ -192,6 +192,10 @@ Web development ideas and points. <br />
 - Do I need the following script? (Maybe not)
   < script src="https://connect.soundcloud.com/sdk/sdk-3.3.2.js"></ script>
 
+# Blocks
+
+- Google Drive API requires OAuth 2.0 authentication on the user (me, ak, etc.) side but only grants an access token with a very short expiration time
+
 # 🎧\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_🎧\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_🎧\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_🎧
 
 # Full stack development
