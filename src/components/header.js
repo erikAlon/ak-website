@@ -6,7 +6,7 @@ import { Breadcrumb } from "react-bootstrap"
 import "./header.css"
 
 const Header = ({ siteTitle }) => (
-  <header className="header--main">
+  <header className="header__main">
     <h1>
       <Link to="/">{siteTitle}</Link>
     </h1>
