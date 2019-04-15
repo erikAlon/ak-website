@@ -2,6 +2,7 @@ import React from "react"
 import { StaticQuery, graphql } from "gatsby"
 import { Button, Form, Jumbotron, Container } from "react-bootstrap"
 import UploadFile from "./UploadFile"
+import "./Form.css"
 
 const Contact = () => (
   <Form.Group controlId="formContactName">
@@ -136,7 +137,7 @@ const Notes = () => (
 )
 
 export default () => (
-  <Form>
+  <Form className="form__main">
     <Contact />
     <Company />
     <Artist />

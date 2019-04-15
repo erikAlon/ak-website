@@ -18,6 +18,12 @@ export default function HTML(props) {
           integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
           crossOrigin="anonymous"
         />
+        <link
+          rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+          crossOrigin="anonymous"
+        />
       </head>
       <body {...props.bodyAttributes}>
         {props.preBodyComponents}

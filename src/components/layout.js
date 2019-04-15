@@ -20,7 +20,14 @@ const Layout = ({ children }) => (
         }
         desktop: file(relativePath: { eq: "AK.jpg" }) {
           childImageSharp {
-            fluid(maxWidth: 3000, maxHeight: 3001) {
+            fluid(maxWidth: 1000, maxHeight: 1001) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        desktop2: file(relativePath: { eq: "bgBlack.jpg" }) {
+          childImageSharp {
+            fluid(maxWidth: 1000, maxHeight: 1001) {
               ...GatsbyImageSharpFluid
             }
           }
@@ -32,17 +39,24 @@ const Layout = ({ children }) => (
         <BackgroundImage
           fluid={data.desktop.childImageSharp.fluid}
           alt="ak logo"
-          className="bgImage"
+          id="ak"
         >
-          <Header siteTitle={data.site.siteMetadata.title} />
+          <BackgroundImage
+            fluid={data.desktop2.childImageSharp.fluid}
+            alt="black overlay"
+            id="black"
+            style={{ opacity: 0.8 }}
+          >
+            <Header siteTitle={data.site.siteMetadata.title} />
 
-          <div className="layout__main">
-            <main>{children}</main>
-            <footer className="layout__foot">
-              © {new Date().getFullYear()}, {data.site.siteMetadata.client} |{" "}
-              {data.site.siteMetadata.author}
-            </footer>
-          </div>
+            <div className="layout__main">
+              <main style={{ zIndex: 1 }}>{children}</main>
+              <footer className="layout__foot">
+                © {new Date().getFullYear()}, {data.site.siteMetadata.client} |{" "}
+                {data.site.siteMetadata.author}
+              </footer>
+            </div>
+          </BackgroundImage>
         </BackgroundImage>
       </div>
     )}

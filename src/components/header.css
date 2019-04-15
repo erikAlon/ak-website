@@ -1,6 +1,7 @@
 .header__main {
   background: black;
   margin: 0 auto;
+  margin-top: 1.45rem;
   margin-bottom: 1.45rem;
   display: flex;
   flex-direction: column;
