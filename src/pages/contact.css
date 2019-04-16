@@ -5,7 +5,9 @@
 .contactM__dialogue--center {
   text-align: center;
 }
-.fa-quote-right {
+.fas {
   display: flex;
+}
+.fa-quote-right {
   flex-direction: row-reverse;
 }

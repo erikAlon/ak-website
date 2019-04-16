@@ -216,3 +216,17 @@ Web development ideas and points. <br />
 | Soundcloud      |
 
 # 🎧\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_🎧\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_🎧\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_🎧
+
+# Flow
+
+1. Client sends file to AK as email to see what expectations the client has
+
+2. AK either accepts or rejects work
+
+3. Process form of payment
+
+4. Mix and master after payment
+
+5. Return mastered tracks within specified time with 10 MB max zipped folder
+
+6. After 4 revisions, charge of $10 per extra revision.
