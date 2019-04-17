@@ -1,6 +1,12 @@
 .tweet {
   position: absolute;
-  left: 1rem;
+  left: 3rem;
+}
+.tweet img {
+  border-radius: 100%;
+  border: 1px white solid;
+  box-shadow: 0 0 15px 7px #fff, /* inner white */ 0 0 25px 15px #f0f, /* middle magenta */ 0 0 35px 22px #0ff;
+  /* outer cyan */
 }
 .disco {
   display: flex;

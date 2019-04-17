@@ -1,0 +1,9 @@
+.popover {
+  max-width: 500px;
+}
+.popover li {
+  list-style-type: none;
+}
+.popover .popover-header {
+  padding-left: 40px;
+}
