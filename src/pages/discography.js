@@ -15,10 +15,6 @@ const Discography = () => (
       <div class="sc">
         <Soundcloud />
       </div>
-
-      <hr />
-
-      <div class="insta">Carousel placeholder</div>
     </div>
   </Layout>
 )
