@@ -1,0 +1,22 @@
+.sc__carousel {
+  width: 50%;
+  height: 200px;
+}
+.sc__carousel .carousel-indicators {
+  top: 200px;
+}
+.sc__carousel .carousel-inner {
+  text-align: center;
+}
+.sc__carousel .carousel-inner .carousel-item {
+  padding: 1rem 0 0 1rem;
+}
+.sc__carousel .carousel-control-prev {
+  left: 2rem;
+}
+.sc__carousel .carousel-control-next {
+  right: 2rem;
+}
+.sc__table {
+  padding: 5rem 0 0 0;
+}

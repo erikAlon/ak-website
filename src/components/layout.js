@@ -18,14 +18,14 @@ const Layout = ({ children }) => (
             client
           }
         }
-        desktop: file(relativePath: { eq: "AK.jpg" }) {
+        ak: file(relativePath: { eq: "AK.jpg" }) {
           childImageSharp {
             fluid(maxWidth: 1000, maxHeight: 1001) {
               ...GatsbyImageSharpFluid
             }
           }
         }
-        desktop2: file(relativePath: { eq: "bgBlack.jpg" }) {
+        black: file(relativePath: { eq: "bgBlack.jpg" }) {
           childImageSharp {
             fluid(maxWidth: 1000, maxHeight: 1001) {
               ...GatsbyImageSharpFluid
@@ -37,12 +37,12 @@ const Layout = ({ children }) => (
     render={data => (
       <div className="layout">
         <BackgroundImage
-          fluid={data.desktop.childImageSharp.fluid}
+          fluid={data.ak.childImageSharp.fluid}
           alt="ak logo"
           id="ak"
         >
           <BackgroundImage
-            fluid={data.desktop2.childImageSharp.fluid}
+            fluid={data.black.childImageSharp.fluid}
             alt="black overlay"
             id="black"
             style={{ opacity: 0.8 }}

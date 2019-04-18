@@ -12,9 +12,7 @@ const Discography = () => (
       <div class="tweet">
         <Twitter />
       </div>
-      <div class="sc">
-        <Soundcloud />
-      </div>
+      <Soundcloud />
     </div>
   </Layout>
 )
