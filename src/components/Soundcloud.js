@@ -36,7 +36,11 @@ export default () => (
     render={data => (
       <Container className="sc">
         <Container className="sc__carousel">
-          <Carousel interval={null}>
+          <Carousel
+            interval={null}
+            nextIcon={<i class="fas fa-step-forward" />}
+            prevIcon={<i class="fas fa-step-backward" />}
+          >
             {data.soundcloudapi.playlist.tracksCollection.collection.map(
               track => (
                 <Carousel.Item>
@@ -63,7 +67,10 @@ export default () => (
           <Row>
             {data.soundcloudapi.playlist.tracksCollection.collection.map(
               track => (
-                <h1>{track.title}</h1>
+                <div>
+                  <span>{track.title}</span>
+                  <hr />
+                </div>
               )
             )}
           </Row>
