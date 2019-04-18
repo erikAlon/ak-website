@@ -2,7 +2,7 @@ import React from "react"
 import { StaticQuery, graphql } from "gatsby"
 import { Button, Form, Jumbotron, Container } from "react-bootstrap"
 import UploadFile from "./UploadFile"
-import "./Form.css"
+import "../styling/Form.css"
 
 const Contact = () => (
   <Form.Group controlId="formContactName">

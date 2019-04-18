@@ -3,8 +3,8 @@ import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
-import "./layout.css"
-import "./layout2.css"
+import "../styling/layout.css"
+import "../styling/layout2.css"
 import BackgroundImage from "gatsby-background-image"
 
 const Layout = ({ children }) => (

@@ -1,6 +1,6 @@
 import React from "react"
 import Layout from "../components/layout"
-import "./contact.css"
+import "../styling/contact.css"
 import Form from "../components/Form"
 
 export default ({ data }) => (

@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 import React from "react"
 
 import { Breadcrumb } from "react-bootstrap"
-import "./header.css"
+import "../styling/header.css"
 
 const Header = ({ siteTitle }) => (
   <header className="header__main">

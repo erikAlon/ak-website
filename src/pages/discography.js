@@ -2,7 +2,7 @@ import React from "react"
 
 import Layout from "../components/layout"
 
-import "./discography.css"
+import "../styling/discography.css"
 import Soundcloud from "../components/Soundcloud"
 import Twitter from "../components/Twitter"
 

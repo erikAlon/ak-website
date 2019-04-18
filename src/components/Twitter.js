@@ -1,6 +1,6 @@
 import React from "react"
 import { StaticQuery, graphql } from "gatsby"
-import "./Twitter.css"
+import "../styling/Twitter.css"
 
 import { Popover, OverlayTrigger } from "react-bootstrap"
 

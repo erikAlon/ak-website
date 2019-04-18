@@ -1,6 +1,6 @@
 import React from "react"
 import { StaticQuery, graphql } from "gatsby"
-import "./Soundcloud.css"
+import "../styling/Soundcloud.css"
 import Img from "gatsby-image"
 import { Container, Row, Col, Carousel } from "react-bootstrap"
 
