@@ -62,7 +62,7 @@ export default () => (
         <Container className="sc__table">
           <Row className="headers">
             <Col>Genres:</Col>
-            <Col>Main Genre</Col>
+            <Col>&lt;Chosen Genre Display&gt;</Col>
           </Row>
           <Row className="list">
             <Col>
