@@ -60,19 +60,18 @@ export default () => (
           </Carousel>
         </Container>
         <Container className="sc__table">
-          <Row>
+          <Row className="headers">
             <Col>Genres:</Col>
             <Col>Main Genre</Col>
           </Row>
-          <Row>
-            {data.soundcloudapi.playlist.tracksCollection.collection.map(
-              track => (
-                <div>
-                  <span>{track.title}</span>
-                  <hr />
-                </div>
-              )
-            )}
+          <Row className="list">
+            <Col>
+              {data.soundcloudapi.playlist.tracksCollection.collection.map(
+                track => (
+                  <div className="track">{track.title}</div>
+                )
+              )}
+            </Col>
           </Row>
         </Container>
       </Container>

@@ -18,5 +18,19 @@
   right: 2rem;
 }
 .sc__table {
-  padding: 5rem 0 0 0;
+  margin: 3rem 0 0 0;
+  justify-content: center;
+}
+.sc__table .headers > div {
+  background-color: #272121;
+  padding: 1rem;
+}
+.sc__table .list {
+  padding-top: 1rem;
+}
+.sc__table .list .track {
+  padding: 1rem 0;
+}
+.sc__table .list .track:hover {
+  background-color: #272121;
 }
