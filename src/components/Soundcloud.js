@@ -4,10 +4,12 @@ import "../styling/Soundcloud.css"
 import Img from "gatsby-image"
 import { Container, Row, Col, Carousel } from "react-bootstrap"
 
-// const Player = url => {
-//   // Fetch stream url
-//   // stream/ pause track url on click
-// }
+const startSc = url => {
+  // Fetch stream url
+  // stream track url on click
+
+  console.log(url)
+}
 
 export default () => (
   <StaticQuery
@@ -68,7 +70,12 @@ export default () => (
             <Col>
               {data.soundcloudapi.playlist.tracksCollection.collection.map(
                 track => (
-                  <div className="track">{track.title}</div>
+                  <div
+                    className="track"
+                    onClick={startSc.bind(this, track.streamUrl)}
+                  >
+                    {track.title}
+                  </div>
                 )
               )}
             </Col>
