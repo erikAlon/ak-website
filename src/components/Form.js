@@ -118,12 +118,17 @@ const Count = () => (
     <Form.Label>Track Count</Form.Label>
     <Form.Check
       aria-label="radio 24"
-      label="Up to 24 Tracks | $299"
+      label="Up to 24 Tracks | $50"
       type="radio"
     />
     <Form.Check
       aria-label="radio 48"
-      label="Up to 48 Tracks | $399"
+      label="Up to 48 Tracks | $75"
+      type="radio"
+    />
+    <Form.Check
+      aria-label="radio 48"
+      label="Up to 48 Tracks | $100"
       type="radio"
     />
   </Form.Group>
@@ -136,18 +141,28 @@ const Notes = () => (
   </Form.Group>
 )
 
-export default () => (
+const ContactForm = () => (
   <Form className="form__main">
     <Contact />
     <Company />
     <Artist />
-    <Email />
     <Phone />
     <Address />
     <City />
     <State />
     <Postal />
     <File />
+    <Count />
+    <Button variant="danger" type="submit">
+      Submit
+    </Button>
+  </Form>
+)
+
+const InquiryForm = () => (
+  <Form className="form__main">
+    <Email />
+    <Notes />
     <Jumbotron fluid>
       <Container>
         <h1>File Upload</h1>
@@ -155,11 +170,10 @@ export default () => (
         <UploadFile />
       </Container>
     </Jumbotron>
-    <Count />
-    <Notes />
-
     <Button variant="danger" type="submit">
       Submit
     </Button>
   </Form>
 )
+
+export { ContactForm, InquiryForm }

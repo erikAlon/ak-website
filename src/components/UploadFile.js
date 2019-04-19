@@ -4,6 +4,7 @@ import { graphql } from "react-apollo"
 import uploadsQuery from "../queries/uploads"
 
 const UploadFile = ({ mutate }) => {
+  console.log("uploadfile fired")
   const handleChange = ({
     target: {
       validity,

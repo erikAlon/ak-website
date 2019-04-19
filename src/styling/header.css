@@ -14,6 +14,9 @@
   text-decoration: none;
   font-style: italic;
 }
+.header__main a:hover {
+  color: grey;
+}
 .header__main h1 {
   margin: 1rem;
 }

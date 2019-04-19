@@ -1,7 +1,9 @@
 import React from "react"
 import Layout from "../components/layout"
 import "../styling/contact.css"
-import Form from "../components/Form"
+import { InquiryForm } from "../components/Form"
+
+import ContactModal from "../components/ContactModal"
 
 export default ({ data }) => (
   <Layout>
@@ -16,9 +18,10 @@ export default ({ data }) => (
         </div>
 
         <div className="contactM__features" />
-        <Form />
+        <InquiryForm />
       </div>
       <div class="right">Seth img as background here</div>
+      <ContactModal />
     </div>
   </Layout>
 )
