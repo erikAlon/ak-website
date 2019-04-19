@@ -3,13 +3,31 @@ import { StaticQuery, graphql } from "gatsby"
 import "../styling/Soundcloud.css"
 import Img from "gatsby-image"
 import { Container, Row, Col, Carousel } from "react-bootstrap"
+import SC from "soundcloud"
 
-const startSc = url => {
+const player = (url, index) => {
   // Fetch stream url
   // stream track url on click
 
-  console.log(url)
+  // carousel-inner
+  let itemList = document.getElementsByClassName("carousel-inner")[0].children
+  for (let item of itemList) {
+    item.setAttribute("class", "carousel-item carousel-item")
+  }
+
+  // carouse-indicator
+  // let indicatorsList = document.getElementsByClassName("carousel-indicators")[0]
+  //   .children
+  // for (let item of indicatorsList) {
+  //   item.setAttribute("class", "")
+  // }
+
+  // set active elements for list, item, and indicator
+  itemList[index].setAttribute("class", "carousel-item active carousel-item")
+  // indicatorsList[index].setAttribute("class", "active")
 }
+
+const progress = () => {}
 
 export default () => (
   <StaticQuery
@@ -19,6 +37,7 @@ export default () => (
           playlist(id: "703111047") {
             tracksCollection {
               collection {
+                id
                 title
                 streamUrl
                 artworkUrl
@@ -42,9 +61,10 @@ export default () => (
             interval={null}
             nextIcon={<i class="fas fa-step-forward" />}
             prevIcon={<i class="fas fa-step-backward" />}
+            indicators={false}
           >
             {data.soundcloudapi.playlist.tracksCollection.collection.map(
-              track => (
+              (track, index) => (
                 <Carousel.Item>
                   {track.artworkUrl ? (
                     <img
@@ -52,9 +72,12 @@ export default () => (
                       alt="track_artwork"
                       height="150"
                       width="150"
+                      onClick={player.bind(this, track.streamUrl, index)}
                     />
                   ) : (
-                    <Img fixed={data.ak.childImageSharp.fixed} />
+                    <div onClick={player.bind(this, track.streamUrl, index)}>
+                      <Img fixed={data.ak.childImageSharp.fixed} />
+                    </div>
                   )}
                 </Carousel.Item>
               )
@@ -69,10 +92,10 @@ export default () => (
           <Row className="list">
             <Col>
               {data.soundcloudapi.playlist.tracksCollection.collection.map(
-                track => (
+                (track, index) => (
                   <div
                     className="track"
-                    onClick={startSc.bind(this, track.streamUrl)}
+                    onClick={player.bind(this, track.streamUrl, index)}
                   >
                     {track.title}
                   </div>

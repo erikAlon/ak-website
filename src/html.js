@@ -24,12 +24,14 @@ export default function HTML(props) {
           integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
           crossOrigin="anonymous"
         />
+        <script src="https://connect.soundcloud.com/sdk/sdk-3.3.2.js" />
       </head>
       <body {...props.bodyAttributes}>
         {props.preBodyComponents}
         <noscript key="noscript" id="gatsby-noscript">
           This app works best with JavaScript enabled.
         </noscript>
+
         <div
           key={`body`}
           id="___gatsby"
