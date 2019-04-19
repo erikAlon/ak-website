@@ -5,6 +5,8 @@ import SEO from "../components/seo"
 
 import { Jumbotron, Container, Button } from "react-bootstrap"
 
+import "../styling/index.css"
+
 const toggleBio = () => {
   let elem = document.getElementsByClassName("bio--hide")[0]
   let butt = document.getElementsByClassName("toggleButton")[0]
