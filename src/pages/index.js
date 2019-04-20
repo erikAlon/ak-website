@@ -23,7 +23,7 @@ const toggleBio = () => {
 const IndexPage = () => (
   <Layout id="top">
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-    <Jumbotron fluid style={{ background: "none" }}>
+    <Jumbotron fluid>
       <Container className="bio">
         <i class="fas fa-quote-left" />
         <br />

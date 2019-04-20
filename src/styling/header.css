@@ -21,7 +21,7 @@
   margin: 1rem;
 }
 .breadcrumb {
-  background: black;
+  background: none;
 }
 .breadcrumb a {
   text-decoration: none;
