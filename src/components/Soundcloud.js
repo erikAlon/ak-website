@@ -3,11 +3,6 @@ import { StaticQuery, graphql } from "gatsby"
 import "../styling/Soundcloud.css"
 import Img from "gatsby-image"
 import { Container, Row, Col, Carousel } from "react-bootstrap"
-import SC from "soundcloud"
-
-SC.initialize({
-  client_id: "4T2gPF6aeAa4QvMYLU0mgjxqDiHtSAbB",
-})
 
 let CURRENT_PLAYER = null
 let PREVIOUS_PLAYER = null
@@ -43,18 +38,6 @@ const player = (url, index) => {
   CURRENT_PLAYER.play()
   PREVIOUS_PLAYER = CURRENT_PLAYER
 }
-
-const next = () => {
-  // Grab carousel inner items html collection
-  // Set index to current active item
-  // Set items to not active
-  // Set previous item to index to active
-  // If 0 index, set last item as active
-}
-
-const previous = () => {}
-
-const progress = () => {}
 
 export default () => (
   <StaticQuery
