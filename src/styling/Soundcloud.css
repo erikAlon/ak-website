@@ -1,6 +1,7 @@
 .sc__carousel {
-  width: 50%;
-  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .sc__carousel .carousel-indicators {
   top: 200px;
@@ -9,13 +10,13 @@
   text-align: center;
 }
 .sc__carousel .carousel-inner .carousel-item {
-  padding: 1rem 0 0 1rem;
+  padding: 0 0 0 0;
 }
-.sc__carousel .carousel-control-prev {
-  left: 2rem;
+.sc__carousel .fa-step-backward {
+  padding-right: 3rem;
 }
-.sc__carousel .carousel-control-next {
-  right: 2rem;
+.sc__carousel .fa-step-forward {
+  padding-left: 3rem;
 }
 .sc__table {
   margin: 3rem 0 0 0;
