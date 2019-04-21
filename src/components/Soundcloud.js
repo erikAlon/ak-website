@@ -100,8 +100,19 @@ export default () => (
                         </audio>
                       </div>
                     ) : (
-                      <div onClick={player.bind(this, track.streamUrl, index)}>
+                      <div
+                        onClick={player.bind(this, track.streamUrl, index)}
+                        id={`player-container-${index}`}
+                        className="audio-wrapper"
+                      >
                         <Img fixed={data.ak.childImageSharp.fixed} />
+                        <audio className="player" id={`player${index}`}>
+                          <source
+                            src={`${
+                              track.streamUrl
+                            }?client_id=4T2gPF6aeAa4QvMYLU0mgjxqDiHtSAbB`}
+                          />
+                        </audio>
                       </div>
                     )}
                   </Carousel.Item>

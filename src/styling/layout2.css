@@ -14,3 +14,8 @@
   color: #b17e0b;
   text-align: center;
 }
+@media only screen and (min-width: 375px) and (orientation: portrait) {
+  .layout__main {
+    min-height: 800px;
+  }
+}

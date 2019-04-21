@@ -11,6 +11,7 @@ export default function HTML(props) {
           name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
+        {props.headComponents}
         <link
           rel="stylesheet"
           href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
@@ -24,7 +25,6 @@ export default function HTML(props) {
           crossOrigin="anonymous"
         />
         <script src="https://connect.soundcloud.com/sdk/sdk-3.3.2.js" />
-        {props.headComponents}
       </head>
       <body {...props.bodyAttributes}>
         {props.preBodyComponents}
