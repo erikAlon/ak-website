@@ -1,8 +1,18 @@
 import React from "react"
 import { StaticQuery, graphql } from "gatsby"
-import { Button, Form, Jumbotron, Container } from "react-bootstrap"
+import {
+  Button,
+  Form,
+  Jumbotron,
+  Container,
+  Row,
+  Tooltip,
+  OverlayTrigger,
+} from "react-bootstrap"
 import UploadFile from "./UploadFile"
 import "../styling/Form.css"
+
+import Img from "gatsby-image"
 
 const Contact = () => (
   <Form.Group controlId="formContactName">
@@ -29,9 +39,7 @@ const Email = () => (
   <Form.Group controlId="formEmail">
     <Form.Label>Email Address</Form.Label>
     <Form.Control size="sm" type="email" />
-    <Form.Text className="text-muted">
-      Your email is encrypted and not shared.
-    </Form.Text>
+    <Form.Text className="text-muted">Your email is not shared.</Form.Text>
   </Form.Group>
 )
 
@@ -134,6 +142,36 @@ const Count = () => (
   </Form.Group>
 )
 
+const UrlTip = () => (
+  <OverlayTrigger
+    placement="right"
+    overlay={
+      <Tooltip id="urlTips">
+        <span>
+          You can send your file with any cloud platform you may have such as:
+        </span>{" "}
+        <br />
+        <br />
+        <i class="fab fa-dropbox" /> <i class="fab fa-google-drive" />{" "}
+        &lt;mediafire-icon&gt; &lt;onedrive-icon&gt;
+      </Tooltip>
+    }
+  >
+    <i class="fas fa-exclamation-circle" />
+  </OverlayTrigger>
+)
+
+const DownloadUrl = () => (
+  <Form.Group controlId="formURL">
+    <Form.Label>URL to your file</Form.Label>
+    <div className="downloadUrl">
+      <Form.Control size="sm" type="download" />
+      <UrlTip />
+    </div>
+    <Form.Text className="text-muted">Link to file if any</Form.Text>
+  </Form.Group>
+)
+
 const Notes = () => (
   <Form.Group controlId="formNotes">
     <Form.Label>Additional Notes</Form.Label>
@@ -153,6 +191,7 @@ const ContactForm = () => (
     <Postal />
     <File />
     <Count />
+    <h1>google captcha goes here</h1>
     <Button variant="danger" type="submit">
       Submit
     </Button>
@@ -160,20 +199,26 @@ const ContactForm = () => (
 )
 
 const InquiryForm = () => (
-  <Form className="form__main">
-    <Email />
-    <Notes />
-    <Jumbotron fluid>
-      <Container>
-        <h1>File Upload</h1>
-        <br />
-        <UploadFile />
-      </Container>
-    </Jumbotron>
-    <Button variant="danger" type="submit">
-      Submit
-    </Button>
-  </Form>
+  <Row>
+    <Form className="form__main">
+      <Email />
+      <DownloadUrl />
+      <Notes />
+      <Jumbotron fluid>
+        <Container>
+          <h1>File Upload</h1>
+          <br />
+          <UploadFile />
+        </Container>
+      </Jumbotron>
+      <h1>
+        &lt;google captcha goes here before uploading to prevent spam &gt;
+      </h1>
+      <Button variant="outline-warning" type="submit">
+        Submit
+      </Button>
+    </Form>
+  </Row>
 )
 
 export { ContactForm, InquiryForm }

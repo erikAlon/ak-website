@@ -1,13 +1,11 @@
-.contactM {
-  display: flex;
-  flex-direction: column-reverse;
-}
-.contactM__dialogue--center {
+.contact__main__dialogue--center {
   text-align: center;
+  width: 600px;
 }
 .fas {
   display: flex;
 }
 .fa-quote-right {
   flex-direction: row-reverse;
+  padding-top: 10rem;
 }

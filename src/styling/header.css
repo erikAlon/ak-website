@@ -1,6 +1,6 @@
 @font-face {
   font-family: labrit;
-  src: url("fonts/labrit.ttf");
+  src: url("./fonts/labrit.ttf");
 }
 .header__main {
   background: black;

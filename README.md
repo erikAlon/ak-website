@@ -46,6 +46,10 @@
 
 - ~~Custom website name and domain~~
 
+- gmail attachments max file size: (25 MB, 25000 KB, 25000000 B)
+
+- 1GB = 1000 MB
+
 ### Page: Merchandise
 
 - This will be a proprietary merch store like application where any user can shop for brand labeled things.
@@ -229,4 +233,4 @@ Web development ideas and points. <br />
 
 5. Return mastered tracks within specified time with 10 MB max zipped folder
 
-6. After 4 revisions, charge of $10 per extra revision.
+6. After 4 revisions, charge of \$10 per extra revision.

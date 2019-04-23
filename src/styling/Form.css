@@ -1,3 +1,10 @@
 .form__main {
   max-width: 50%;
 }
+.downloadUrl {
+  display: flex;
+  align-items: center;
+}
+.downloadUrl i {
+  padding-left: 1rem;
+}

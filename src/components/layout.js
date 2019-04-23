@@ -52,7 +52,8 @@ const Layout = ({ children }) => (
             <div className="layout__main">
               <main style={{ zIndex: 1 }}>{children}</main>
               <footer className="layout__foot">
-                © {new Date().getFullYear()}, {data.site.siteMetadata.client} |{" "}
+                © {new Date().getFullYear()} All Rights Reserved,{" "}
+                {data.site.siteMetadata.client} |{" "}
                 {data.site.siteMetadata.author}
               </footer>
             </div>

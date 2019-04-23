@@ -3,6 +3,8 @@ import gql from "graphql-tag"
 import { graphql } from "react-apollo"
 import uploadsQuery from "../queries/uploads"
 
+import { Button } from "react-bootstrap"
+
 const UploadFile = ({ mutate }) => {
   console.log("uploadfile fired")
   const handleChange = ({
@@ -26,7 +28,15 @@ const UploadFile = ({ mutate }) => {
       },
     })
 
-  return <input type="file" required onChange={handleChange} />
+  return (
+    <Button
+      as="input"
+      variant="outline-warning"
+      type="file"
+      required
+      onChange={handleChange}
+    />
+  )
 }
 
 export default graphql(gql`

@@ -18,28 +18,28 @@ const Header = ({ siteTitle }) => (
           <Col>
             <Breadcrumb.Item>
               <Link className="header__link" to="/">
-                Home
+                About
               </Link>
             </Breadcrumb.Item>
           </Col>
           <Col>
             <Breadcrumb.Item>
               <Link className="header__link" to="store">
-                Store
+                Merch
               </Link>
             </Breadcrumb.Item>
           </Col>
           <Col>
             <Breadcrumb.Item>
               <Link className="header__link" to="discography">
-                Discography
+                Samples
               </Link>
             </Breadcrumb.Item>
           </Col>
           <Col>
             <Breadcrumb.Item>
               <Link className="header__link" to="contact">
-                Contact
+                Upload
               </Link>
             </Breadcrumb.Item>
           </Col>
