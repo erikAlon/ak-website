@@ -28,17 +28,17 @@ export default ({ data }) => (
 
       <Container className="contact__main__features">
         <Row>
-          <Col>
+          <Col xs={1}>
             <i class="fas fa-compact-disc" />
           </Col>
-          <Col xs={4}>
+          <Col xs={5}>
             <h3>Expertise</h3>
             <span>A unique sound born from the southern part of Texas</span>
           </Col>
-          <Col>
-            <i class="fas fa-calendar-alt" />
+          <Col xs={1}>
+            <i class="far fa-clock" />
           </Col>
-          <Col xs={4}>
+          <Col xs={5}>
             <h3>Fast turn-around</h3>
             <span>
               Get your tracks mixed and mastered within 3 business days
@@ -47,7 +47,7 @@ export default ({ data }) => (
         </Row>
         <hr />
         <Row>
-          <Col>
+          <Col xs={1}>
             <Container className="circle__container">
               <Row>
                 <i id="deg0" class="fab fa-itunes-note" />
@@ -63,17 +63,17 @@ export default ({ data }) => (
               </Row>
             </Container>
           </Col>
-          <Col xs={4}>
-            <h3>Stream worthy</h3>
+          <Col xs={5}>
+            <h3>Stream/ Radio ready</h3>
             <span>
               Receive a stream-ready mastered file and an uncompressed mix-level
               file for archiving and future remastering
             </span>
           </Col>
-          <Col>
+          <Col xs={1}>
             <i class="fas fa-layer-group" />
           </Col>
-          <Col xs={4}>
+          <Col xs={5}>
             <h3>4 Revisions</h3>
             <span>Four free revisions and capability of adding more</span>
           </Col>
