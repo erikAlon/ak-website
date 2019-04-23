@@ -33,7 +33,6 @@ const UploadFile = ({ mutate }) => {
       as="input"
       variant="outline-warning"
       type="file"
-      required
       onChange={handleChange}
     />
   )

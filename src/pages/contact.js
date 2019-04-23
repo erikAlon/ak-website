@@ -5,7 +5,7 @@ import { InquiryForm } from "../components/Form"
 
 // import ContactModal from "../components/ContactModal"
 
-import { Jumbotron, Container, Row, Col } from "react-bootstrap"
+import { Container, Row, Col } from "react-bootstrap"
 
 export default ({ data }) => (
   <Layout>

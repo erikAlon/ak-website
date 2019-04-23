@@ -35,8 +35,8 @@ const Artist = () => (
 
 const Email = () => (
   <Form.Group controlId="formEmail">
-    <Form.Label>Email Address</Form.Label>
-    <Form.Control size="sm" type="email" />
+    <Form.Label>*Email Address</Form.Label>
+    <Form.Control required size="sm" type="email" />
   </Form.Group>
 )
 
@@ -196,24 +196,20 @@ const ContactForm = () => (
 )
 
 const InquiryForm = () => (
-  <Row>
-    <Form className="form__main">
-      <Email />
-      <DownloadUrl />
-      <Notes />
-      <Jumbotron fluid>
-        <Container>
-          <h1>File Upload</h1>
-          <br />
-          <UploadFile />
-        </Container>
-      </Jumbotron>
-      <h1>&lt;google captcha goes here before uploading to prevent spam&gt;</h1>
-      <Button variant="outline-warning" type="submit">
-        Submit
-      </Button>
-    </Form>
-  </Row>
+  <Form className="form__main">
+    <Email />
+    <DownloadUrl />
+    <Form.Group controlId="formUpload">
+      <Form.Label>File Upload</Form.Label>
+      <br />
+      <UploadFile />
+    </Form.Group>
+    <Notes />
+    <h5>&lt;google captcha goes here before uploading to prevent spam&gt;</h5>
+    <Button variant="outline-warning" type="submit">
+      Submit
+    </Button>
+  </Form>
 )
 
 export { ContactForm, InquiryForm }

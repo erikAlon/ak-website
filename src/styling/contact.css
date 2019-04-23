@@ -26,12 +26,14 @@
 }
 .circle__container .row:nth-child(1) {
   justify-content: space-around;
+  padding-bottom: 0.1rem;
 }
 .circle__container .row:nth-child(2) {
   justify-content: space-between;
 }
 .circle__container .row:nth-child(3) {
   justify-content: space-around;
+  padding-top: 0.1rem;
 }
 .fas {
   display: flex;
