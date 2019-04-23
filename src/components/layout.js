@@ -18,14 +18,7 @@ const Layout = ({ children }) => (
             client
           }
         }
-        ak: file(relativePath: { eq: "AK.jpg" }) {
-          childImageSharp {
-            fluid(maxWidth: 1000, maxHeight: 1001) {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
-        black: file(relativePath: { eq: "bgBlack.jpg" }) {
+        ak: file(relativePath: { eq: "AK95.jpg" }) {
           childImageSharp {
             fluid(maxWidth: 1000, maxHeight: 1001) {
               ...GatsbyImageSharpFluid
@@ -41,23 +34,15 @@ const Layout = ({ children }) => (
           alt="ak logo"
           id="ak"
         >
-          <BackgroundImage
-            fluid={data.black.childImageSharp.fluid}
-            alt="black overlay"
-            id="black"
-            style={{ opacity: 0.8 }}
-          >
-            <Header siteTitle={data.site.siteMetadata.title} />
+          <Header siteTitle={data.site.siteMetadata.title} />
 
-            <div className="layout__main">
-              <main style={{ zIndex: 1 }}>{children}</main>
-              <footer className="layout__foot">
-                © {new Date().getFullYear()} All Rights Reserved,{" "}
-                {data.site.siteMetadata.client} |{" "}
-                {data.site.siteMetadata.author}
-              </footer>
-            </div>
-          </BackgroundImage>
+          <div className="layout__main">
+            <main style={{ zIndex: 1 }}>{children}</main>
+            <footer className="layout__foot">
+              © {new Date().getFullYear()} All Rights Reserved,{" "}
+              {data.site.siteMetadata.client} | {data.site.siteMetadata.author}
+            </footer>
+          </div>
         </BackgroundImage>
       </div>
     )}

@@ -12,8 +12,6 @@ import {
 import UploadFile from "./UploadFile"
 import "../styling/Form.css"
 
-import Img from "gatsby-image"
-
 const Contact = () => (
   <Form.Group controlId="formContactName">
     <Form.Label>Contact Name</Form.Label>
@@ -39,7 +37,6 @@ const Email = () => (
   <Form.Group controlId="formEmail">
     <Form.Label>Email Address</Form.Label>
     <Form.Control size="sm" type="email" />
-    <Form.Text className="text-muted">Your email is not shared.</Form.Text>
   </Form.Group>
 )
 
@@ -211,9 +208,7 @@ const InquiryForm = () => (
           <UploadFile />
         </Container>
       </Jumbotron>
-      <h1>
-        &lt;google captcha goes here before uploading to prevent spam &gt;
-      </h1>
+      <h1>&lt;google captcha goes here before uploading to prevent spam&gt;</h1>
       <Button variant="outline-warning" type="submit">
         Submit
       </Button>
