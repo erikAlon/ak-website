@@ -6,24 +6,28 @@
   width: 600px;
 }
 .contact__main__features {
+  padding: 1rem;
   font-size: 0.9rem;
-  background: #000000;
+  background-color: rgba(5, 5, 5, 0.74);
+  box-shadow: 0 0 20px 10px black;
+  border-radius: 20px;
+  margin: 2rem 0 2rem 0;
 }
-.contact__main__features .fas {
-  font-size: 40px;
+.fas {
+  font-size: 50px;
 }
-.contact__main__features .circle__container {
-  width: 40px;
-  height: 40px;
-  margin-left: 0;
+.circle__container {
+  width: 50px;
+  height: 50px;
+  margin: 0;
 }
-.contact__main__features .circle__container:nth-child(0) {
+.circle__container .row:nth-child(1) {
   justify-content: space-around;
 }
-.contact__main__features .circle__container:nth-child(1) {
+.circle__container .row:nth-child(2) {
   justify-content: space-between;
 }
-.contact__main__features .circle__container:nth-child(2) {
+.circle__container .row:nth-child(3) {
   justify-content: space-around;
 }
 .fas {
