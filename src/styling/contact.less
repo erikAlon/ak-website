@@ -1,3 +1,7 @@
+.contact__main {
+  margin-top: 2rem;
+}
+
 .contact__main__dialogue--center {
   text-align: center;
   width: 600px;
@@ -8,6 +12,27 @@
 
 .contact__main__features {
   font-size: 0.9rem;
+  background: rgb(0, 0, 0, 0.9);
+
+  .fas {
+    font-size: 40px;
+  }
+
+  .circle__container {
+    width: 40px;
+    height: 40px;
+    margin-left: 0;
+
+    &:nth-child(0) {
+      justify-content: space-around;
+    }
+    &:nth-child(1) {
+      justify-content: space-between;
+    }
+    &:nth-child(2) {
+      justify-content: space-around;
+    }
+  }
 }
 
 .fas {

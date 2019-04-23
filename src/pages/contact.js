@@ -7,9 +7,11 @@ import { InquiryForm } from "../components/Form"
 
 import { Jumbotron, Container, Row, Col } from "react-bootstrap"
 
+import Img from "gatsby-image"
+
 export default ({ data }) => (
   <Layout>
-    <Container class="contact__main">
+    <Container className="contact__main">
       <Row className="contact__main__dialogue">
         <Col>
           <i class="fas fa-quote-left" />
@@ -29,15 +31,38 @@ export default ({ data }) => (
       <Jumbotron>
         <Container className="contact__main__features">
           <Row>
-            <Col>A unique sound born from the southern part of Texas</Col>
-            <Col>Get your tracks mixed and mastered within 3 business days</Col>
+            <Col>
+              <i class="fas fa-compact-disc" />A unique sound born from the
+              southern part of Texas
+            </Col>
+            <Col>
+              <i class="fas fa-calendar-alt" />
+              Get your tracks mixed and mastered within 3 business days
+            </Col>
           </Row>
           <Row>
             <Col>
-              Receive a radio streaming mastered file and an uncompressed
-              mix-level file for archiving and future remastering
+              <Container className="circle__container">
+                <Row>
+                  <i id="deg0" class="fab fa-itunes-note" />
+                  <i id="deg45" class="fab fa-youtube" />
+                </Row>
+                <Row>
+                  <i id="deg135" class="fab fa-google-play" />
+                  <i id="deg180" class="fab fa-soundcloud" />
+                </Row>
+                <Row>
+                  <i id="deg225" class="fab fa-spotify" />
+                  <i id="deg315" class="fab fa-bandcamp" />
+                </Row>
+              </Container>
+              Receive a stream-ready mastered file and an uncompressed mix-level
+              file for archiving and future remastering
             </Col>
-            <Col>Four free revisions and capability of adding more</Col>
+            <Col>
+              <i class="fas fa-layer-group" />
+              Four free revisions and capability of adding more
+            </Col>
           </Row>
         </Container>
       </Jumbotron>
@@ -51,3 +76,15 @@ export default ({ data }) => (
     </Container>
   </Layout>
 )
+
+export const query = graphql`
+  query {
+    icons: file(relativePath: { eq: "mediafire.png" }) {
+      childImageSharp {
+        fixed(width: 40, height: 40) {
+          ...GatsbyImageSharpFixed
+        }
+      }
+    }
+  }
+`

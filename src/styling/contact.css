@@ -1,9 +1,30 @@
+.contact__main {
+  margin-top: 2rem;
+}
 .contact__main__dialogue--center {
   text-align: center;
   width: 600px;
 }
 .contact__main__features {
   font-size: 0.9rem;
+  background: #000000;
+}
+.contact__main__features .fas {
+  font-size: 40px;
+}
+.contact__main__features .circle__container {
+  width: 40px;
+  height: 40px;
+  margin-left: 0;
+}
+.contact__main__features .circle__container:nth-child(0) {
+  justify-content: space-around;
+}
+.contact__main__features .circle__container:nth-child(1) {
+  justify-content: space-between;
+}
+.contact__main__features .circle__container:nth-child(2) {
+  justify-content: space-around;
 }
 .fas {
   display: flex;
