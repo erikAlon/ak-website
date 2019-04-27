@@ -4,18 +4,23 @@
 }
 @media only screen and (min-width: 375px) and (orientation: portrait) {
   .header__main {
-    background: black;
+    border-bottom: 1px solid white;
     margin-top: 1.25rem;
-    display: flex;
-    flex-direction: column;
     align-items: center;
     color: white;
   }
   .header__main h1 {
     font-family: labrit;
-    margin: 0;
+    padding-left: 1rem;
+  }
+  .header__main .fas {
+    justify-content: flex-end;
+  }
+  .header__main .fas:hover {
+    color: gray;
   }
   .breadcrumb {
+    display: none;
     background: none;
     margin: auto;
     padding: 0;
@@ -32,5 +37,46 @@
   }
   .breadcrumb a:hover {
     color: grey;
+  }
+  .sidenav {
+    height: 99%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 375;
+    right: 0;
+    background-color: black;
+    padding-top: 1rem;
+    transition: 0.5s;
+    display: flex;
+    flex-direction: column;
+    color: white;
+  }
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 3rem;
+    font-family: labrit;
+  }
+  .sidenav a:hover {
+    color: gray;
+  }
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  .sidenav .fas {
+    padding: 0 0 1rem 7rem;
+  }
+  .sidenav .fas:hover {
+    color: gray;
+  }
+}
+@media only screen and (min-width: 812px) {
+  .header__main .breadcrumb {
+    display: initial;
   }
 }
