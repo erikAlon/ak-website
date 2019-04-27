@@ -37,7 +37,7 @@ const Header = ({ siteTitle }) => (
     <Container className="header__main">
       <Row>
         <Col xs={9}>
-          <h1>{siteTitle}</h1>
+          <h1 id="title">{siteTitle}</h1>
         </Col>
         <Col>
           <i onClick={openNav} class="fas fa-bars" />

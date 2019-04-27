@@ -83,6 +83,7 @@
     }
 
     .fas {
+      color: white;
       padding: 0 0 1rem 7rem;
     }
 
@@ -92,10 +93,54 @@
   }
 }
 
-@media only screen and (min-width: 812px) {
+@media (min-width: 768px) {
+  .sidenav {
+    display: none;
+  }
+
   .header__main {
-    .breadcrumb {
-      display: initial;
+    border-bottom: 1px solid white;
+    margin-top: 1.25rem;
+    align-items: center;
+
+    h1 {
+      font-family: labrit;
+      padding-left: 1rem;
+    }
+
+    .fas {
+      justify-content: flex-end;
+    }
+
+    .fas:hover {
+      color: gray;
+    }
+  }
+
+  #title {
+    font-style: labrit;
+    color: white;
+  }
+
+  .breadcrumb {
+    background: none;
+    margin: auto;
+    padding: 0;
+
+    a {
+      color: white;
+      text-decoration: none;
+      font-style: italic;
+      font-size: 3rem;
+
+      .header__link {
+        font-size: 1.5rem;
+        font-family: labrit;
+      }
+    }
+
+    a:hover {
+      color: grey;
     }
   }
 }
