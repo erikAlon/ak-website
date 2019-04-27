@@ -13,6 +13,9 @@
   border-radius: 20px;
   margin: 2rem 0 2rem 0;
 }
+.contact__main__features i {
+  padding-top: 0.5rem;
+}
 .fas {
   font-size: 50px;
 }
@@ -26,14 +29,12 @@
 }
 .circle__container .row:nth-child(1) {
   justify-content: space-around;
-  padding-bottom: 0.1rem;
 }
 .circle__container .row:nth-child(2) {
   justify-content: space-between;
 }
 .circle__container .row:nth-child(3) {
   justify-content: space-around;
-  padding-top: 0.1rem;
 }
 .fas {
   display: flex;

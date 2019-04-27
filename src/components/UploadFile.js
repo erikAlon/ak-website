@@ -6,7 +6,6 @@ import uploadsQuery from "../queries/uploads"
 import { Button } from "react-bootstrap"
 
 const UploadFile = ({ mutate }) => {
-  console.log("uploadfile fired")
   const handleChange = ({
     target: {
       validity,

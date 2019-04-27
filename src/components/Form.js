@@ -1,14 +1,6 @@
 import React from "react"
 import { StaticQuery, graphql } from "gatsby"
-import {
-  Button,
-  Form,
-  Jumbotron,
-  Container,
-  Row,
-  Tooltip,
-  OverlayTrigger,
-} from "react-bootstrap"
+import { Button, Form, Tooltip, OverlayTrigger } from "react-bootstrap"
 import UploadFile from "./UploadFile"
 import "../styling/Form.css"
 

@@ -9,10 +9,11 @@ const Header = ({ siteTitle }) => (
   <header>
     <Container className="header__main">
       <Row>
-        <h1>
-          <Link to="/">{siteTitle}</Link>
-        </h1>
+        <Col>
+          <h1>{siteTitle}</h1>
+        </Col>
       </Row>
+
       <Row>
         <Breadcrumb>
           <Col>

@@ -2,33 +2,35 @@
   font-family: labrit;
   src: url("./fonts/labrit.ttf");
 }
-.header__main {
-  background: black;
-  margin-top: 1.45rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border-radius: 25px 0 25px 0;
-}
-.header__main a {
-  color: white;
-  text-decoration: none;
-  font-style: italic;
-  font-size: 3rem;
-  font-family: labrit;
-}
-.header__main a .header__link {
-  font-size: 1.5rem;
-}
-.header__main a:hover {
-  color: grey;
-}
-.header__main h1 {
-  margin: 1rem;
-}
-.breadcrumb {
-  background: none;
-}
-.breadcrumb a {
-  text-decoration: none;
+@media only screen and (min-width: 375px) and (orientation: portrait) {
+  .header__main {
+    background: black;
+    margin-top: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+  }
+  .header__main h1 {
+    font-family: labrit;
+    margin: 0;
+  }
+  .breadcrumb {
+    background: none;
+    margin: auto;
+    padding: 0;
+  }
+  .breadcrumb a {
+    color: white;
+    text-decoration: none;
+    font-style: italic;
+    font-size: 3rem;
+  }
+  .breadcrumb a .header__link {
+    font-size: 1.5rem;
+    font-family: labrit;
+  }
+  .breadcrumb a:hover {
+    color: grey;
+  }
 }

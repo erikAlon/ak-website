@@ -28,23 +28,21 @@ const Layout = ({ children }) => (
       }
     `}
     render={data => (
-      <div className="layout">
-        <BackgroundImage
-          fluid={data.ak.childImageSharp.fluid}
-          alt="ak logo"
-          id="ak"
-        >
-          <Header siteTitle={data.site.siteMetadata.title} />
+      <BackgroundImage
+        fluid={data.ak.childImageSharp.fluid}
+        alt="ak logo"
+        id="ak"
+      >
+        <Header siteTitle={data.site.siteMetadata.title} />
 
-          <div className="layout__main">
-            <main style={{ zIndex: 1 }}>{children}</main>
-            <footer className="layout__foot">
-              © {new Date().getFullYear()} All Rights Reserved,{" "}
-              {data.site.siteMetadata.client} | {data.site.siteMetadata.author}
-            </footer>
-          </div>
-        </BackgroundImage>
-      </div>
+        <div className="layout__main">
+          <main style={{ zIndex: 1 }}>{children}</main>
+          <footer className="layout__foot">
+            © {new Date().getFullYear()} All Rights Reserved,{" "}
+            {data.site.siteMetadata.client} | {data.site.siteMetadata.author}
+          </footer>
+        </div>
+      </BackgroundImage>
     )}
   />
 )
