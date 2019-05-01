@@ -1,7 +1,7 @@
 import React from "react"
 import { StaticQuery, graphql } from "gatsby"
 import { Button, Form, Tooltip, OverlayTrigger } from "react-bootstrap"
-import UploadFile from "./UploadFile"
+// import UploadFile from "./UploadFile"
 import "../styling/Form.css"
 
 const Contact = () => (
@@ -25,10 +25,17 @@ const Artist = () => (
   </Form.Group>
 )
 
-const Email = () => (
+const Email = props => (
   <Form.Group controlId="formEmail">
     <Form.Label>*Email Address</Form.Label>
-    <Form.Control required size="sm" type="email" />
+    <Form.Control
+      required
+      size="sm"
+      type="email"
+      name="email"
+      value={props.props}
+      onChange={props.onChange}
+    />
   </Form.Group>
 )
 
@@ -150,21 +157,33 @@ const UrlTip = () => (
   </OverlayTrigger>
 )
 
-const DownloadUrl = () => (
+const DownloadUrl = props => (
   <Form.Group controlId="formURL">
     <Form.Label>URL to your file</Form.Label>
     <div className="downloadUrl">
-      <Form.Control size="sm" type="download" />
+      <Form.Control
+        size="sm"
+        type="download"
+        name="url"
+        value={props.props}
+        onChange={props.onChange}
+      />
       <UrlTip />
     </div>
     <Form.Text className="text-muted">Link to file if any</Form.Text>
   </Form.Group>
 )
 
-const Notes = () => (
+const Notes = props => (
   <Form.Group controlId="formNotes">
     <Form.Label>Additional Notes</Form.Label>
-    <Form.Control as="textarea" rows="4" />
+    <Form.Control
+      as="textarea"
+      rows="4"
+      name="notes"
+      value={props.props}
+      onChange={props.onChange}
+    />
   </Form.Group>
 )
 
@@ -187,21 +206,21 @@ const ContactForm = () => (
   </Form>
 )
 
-const InquiryForm = () => (
-  <Form className="form__main">
-    <Email />
-    <DownloadUrl />
-    <Form.Group controlId="formUpload">
-      <Form.Label>File Upload</Form.Label>
-      <br />
-      <UploadFile />
-    </Form.Group>
-    <Notes />
-    <h5>&lt;google captcha goes here before uploading to prevent spam&gt;</h5>
-    <Button variant="outline-warning" type="submit">
-      Submit
-    </Button>
-  </Form>
-)
+// const InquiryForm = () => (
+//   <Form className="form__main">
+//     <Email />
+//     <DownloadUrl />
+//     <Form.Group controlId="formUpload">
+//       <Form.Label>File Upload</Form.Label>
+//       <br />
+//       <UploadFile />
+//     </Form.Group>
+//     <Notes />
+//     <h5>&lt;google captcha goes here before uploading to prevent spam&gt;</h5>
+//     <Button variant="outline-warning" type="submit">
+//       Submit
+//     </Button>
+//   </Form>
+// )
 
-export { ContactForm, InquiryForm }
+export { Email, DownloadUrl, Notes, ContactForm }

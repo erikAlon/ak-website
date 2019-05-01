@@ -6,5 +6,7 @@ import { createUploadLink } from "apollo-upload-client"
 export const client = new ApolloClient({
   ssrMode: typeof window !== "undefined",
   cache: new InMemoryCache(),
-  link: createUploadLink({ uri: "http://localhost:3001/graphql" }),
+  link: createUploadLink({
+    uri: "https://gmail-graphql-transport.herokuapp.com/graphql",
+  }),
 })

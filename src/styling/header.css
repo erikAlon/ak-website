@@ -2,7 +2,7 @@
   font-family: labrit;
   src: url("./fonts/labrit.ttf");
 }
-@media only screen and (min-width: 375px) and (orientation: portrait) {
+@media only screen and (max-width: 480px) {
   .header__main {
     border-bottom: 1px solid white;
     margin-top: 1.25rem;
@@ -76,7 +76,7 @@
     color: gray;
   }
 }
-@media (min-width: 768px) {
+@media only screen and (min-width: 960px) {
   .sidenav {
     display: none;
   }

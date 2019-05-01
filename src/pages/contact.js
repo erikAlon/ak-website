@@ -1,7 +1,7 @@
 import React from "react"
 import Layout from "../components/layout"
 import "../styling/contact.css"
-import { InquiryForm } from "../components/Form"
+import InquiryForm from "../components/InquiryForm"
 
 // import ContactModal from "../components/ContactModal"
 

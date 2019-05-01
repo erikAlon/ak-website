@@ -50,6 +50,8 @@
 
 - 1GB = 1000 MB
 
+- graphql servers are set to development
+
 ### Page: Merchandise
 
 - This will be a proprietary merch store like application where any user can shop for brand labeled things.
