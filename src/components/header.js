@@ -47,32 +47,32 @@ const Header = ({ siteTitle }) => (
       <Row>
         <Breadcrumb>
           <Col>
-            <Breadcrumb.Item>
-              <Link className="header__link" to="/">
-                About
-              </Link>
-            </Breadcrumb.Item>
+            <Link to="/">
+              <Breadcrumb.Item>
+                <Link to="/">About</Link>
+              </Breadcrumb.Item>
+            </Link>
           </Col>
           <Col>
-            <Breadcrumb.Item>
-              <Link className="header__link" to="store">
-                Merch
-              </Link>
-            </Breadcrumb.Item>
+            <Link to="store">
+              <Breadcrumb.Item>
+                <Link to="store">Merch</Link>
+              </Breadcrumb.Item>
+            </Link>
           </Col>
           <Col>
-            <Breadcrumb.Item>
-              <Link className="header__link" to="discography">
-                Samples
-              </Link>
-            </Breadcrumb.Item>
+            <Link to="discography">
+              <Breadcrumb.Item>
+                <Link to="discography">Samples</Link>
+              </Breadcrumb.Item>
+            </Link>
           </Col>
           <Col>
-            <Breadcrumb.Item>
-              <Link className="header__link" to="contact">
-                Upload
-              </Link>
-            </Breadcrumb.Item>
+            <Link to="contact">
+              <Breadcrumb.Item>
+                <Link to="contact">Upload</Link>
+              </Breadcrumb.Item>
+            </Link>
           </Col>
         </Breadcrumb>
       </Row>
