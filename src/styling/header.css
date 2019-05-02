@@ -124,7 +124,4 @@
   .fas {
     justify-content: flex-end;
   }
-  .fas:hover {
-    color: gray;
-  }
 }

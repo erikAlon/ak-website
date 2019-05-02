@@ -5,6 +5,7 @@ import "../styling/InquiryForm.css"
 import gql from "graphql-tag"
 import { graphql } from "react-apollo"
 import uploadsQuery from "../queries/uploads"
+import "../styling/InquiryForm.css"
 
 class InquiryForm extends React.Component {
   state = {
@@ -49,7 +50,7 @@ class InquiryForm extends React.Component {
 
   render() {
     return (
-      <Form onSubmit={this.handleSubmit}>
+      <Form onSubmit={this.handleSubmit} className="inquiry__main">
         <Email props={this.state.email} onChange={this.handleChange} />
         <DownloadUrl props={this.state.url} onChange={this.handleChange} />
         <Notes props={this.state.notes} onChange={this.handleChange} />

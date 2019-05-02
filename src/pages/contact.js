@@ -1,9 +1,11 @@
 import React from "react"
 import Layout from "../components/layout"
+import BackgroundImage from "gatsby-background-image"
+import { graphql } from "gatsby"
 import "../styling/contact.css"
 import InquiryForm from "../components/InquiryForm"
 import { Container, Row, Col, Card } from "react-bootstrap"
-import BackgroundImage from "gatsby-background-image"
+import { ContactForm } from "../components/FormFields"
 
 export default ({ data }) => (
   <Layout>
@@ -80,6 +82,51 @@ export default ({ data }) => (
         </Container>
       </Row>
 
+      <Row className="dialogue">
+        <Col>
+          <i class="fas fa-quote-left" />
+        </Col>
+        <Col>
+          <h1 className="dialogue--center">
+            SEND US YOUR SAMPLE <hr /> WITH THE EMAIL FORM BELOW
+          </h1>
+        </Col>
+        <Col>
+          <i class="fas fa-quote-right" />
+        </Col>
+      </Row>
+
+      <Row className="arrow">
+        <i class="fas fa-chevron-down" />
+        <i class="fas fa-chevron-down" id="arrow--bottom" />
+      </Row>
+
+      <Row className="inquiry">
+        <Col>
+          <InquiryForm />
+        </Col>
+        <Col className="features" />
+      </Row>
+
+      <Row className="dialogue">
+        <Col>
+          <i class="fas fa-quote-left" />
+        </Col>
+        <Col>
+          <h1 className="dialogue--center">
+            OR CHOOSE A SERVICE <hr /> TODAY
+          </h1>
+        </Col>
+        <Col>
+          <i class="fas fa-quote-right" />
+        </Col>
+      </Row>
+
+      <Row className="arrow">
+        <i class="fas fa-chevron-down" />
+        <i class="fas fa-chevron-down" id="arrow--bottom" />
+      </Row>
+
       <Row className="services">
         <Col>
           <Card>
@@ -95,7 +142,7 @@ export default ({ data }) => (
                 </div>
               </Card.Body>
             </BackgroundImage>
-            <Card.Footer className="text-muted">SELECT</Card.Footer>
+            <Card.Footer>SELECT</Card.Footer>
           </Card>
         </Col>
         <Col>
@@ -112,7 +159,7 @@ export default ({ data }) => (
                 </div>
               </Card.Body>
             </BackgroundImage>
-            <Card.Footer className="text-muted">SELECT</Card.Footer>
+            <Card.Footer>SELECT</Card.Footer>
           </Card>
         </Col>
         <Col>
@@ -129,13 +176,16 @@ export default ({ data }) => (
                 </div>
               </Card.Body>
             </BackgroundImage>
-            <Card.Footer className="text-muted">SELECT</Card.Footer>
+            <Card.Footer>SELECT</Card.Footer>
           </Card>
         </Col>
       </Row>
 
       <Row className="inquiry">
-        <InquiryForm />
+        <Col className="features" />
+        <Col>
+          <ContactForm />
+        </Col>
       </Row>
     </Container>
   </Layout>
