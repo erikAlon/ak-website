@@ -1,45 +1,98 @@
-.contact__main {
-  margin-top: 2rem;
-}
-.contact__main__dialogue--center {
-  text-align: center;
-  width: 600px;
-}
-.contact__main__features {
-  padding: 1rem;
-  font-size: 0.9rem;
-  background-color: rgba(5, 5, 5, 0.74);
-  box-shadow: 0 0 20px 10px black;
-  border-radius: 20px;
-  margin: 2rem 0 2rem 0;
-}
-.contact__main__features i {
-  padding-top: 0.5rem;
-}
-.fas {
-  font-size: 50px;
-}
-.far {
-  font-size: 50px;
-}
-.circle__container {
-  width: 50px;
-  height: 50px;
-  margin: 0;
-}
-.circle__container .row:nth-child(1) {
-  justify-content: space-around;
-}
-.circle__container .row:nth-child(2) {
-  justify-content: space-between;
-}
-.circle__container .row:nth-child(3) {
-  justify-content: space-around;
-}
-.fas {
-  display: flex;
-}
-.fa-quote-right {
-  flex-direction: row-reverse;
-  padding-top: 10rem;
+@media only screen and (min-width: 960px) {
+  .contact__main {
+    margin-top: 2rem;
+  }
+  .contact__main > .row {
+    margin: 5rem 0;
+  }
+  .contact__main .services .card {
+    height: 300px;
+    background-color: rgba(5, 5, 5, 0.74);
+    box-shadow: 0 0 20px 10px black;
+    border-radius: 20px;
+  }
+  .contact__main .services .card .card-header {
+    font-size: 1.5rem;
+    text-align: center;
+    background-color: #5a5a5a;
+  }
+  .contact__main .services .card .card-footer {
+    text-align: center;
+    background-color: #5a5a5a;
+  }
+  .contact__main .services .card .card-body {
+    font-size: 0.9rem;
+    position: relative;
+    overflow: hidden;
+    height: 300px;
+  }
+  .contact__main .services .card .card-body .tag {
+    position: absolute;
+    width: 225px;
+    height: 225px;
+    border-radius: 50%;
+    background-color: #562038;
+    bottom: 38px;
+    right: -55px;
+  }
+  .contact__main .services .card .card-body .tag .tag--price {
+    text-align: center;
+  }
+  .contact__main .services .card .card-body .tag .tag--price h1 {
+    font-family: unset;
+    font-size: 3.5rem;
+    position: relative;
+    top: 35px;
+    left: -20px;
+  }
+  .contact__main .services .card .card-body .tag .tag--price h6 {
+    font-size: 1rem;
+    position: relative;
+    padding-top: 1rem;
+  }
+  .contact__main .services .card .card-footer:active {
+    background-color: #726e6e;
+  }
+  .dialogue--center {
+    text-align: center;
+    width: 600px;
+  }
+  .features {
+    padding: 1rem;
+    font-size: 0.9rem;
+    background-color: rgba(5, 5, 5, 0.74);
+    box-shadow: 0 0 20px 10px black;
+    border-radius: 20px;
+    margin: 2rem 0 2rem 0;
+  }
+  .features i {
+    padding-top: 0.5rem;
+  }
+  .fas {
+    font-size: 50px;
+  }
+  .far {
+    font-size: 50px;
+  }
+  .circle__container {
+    width: 50px;
+    height: 50px;
+    margin: 0;
+  }
+  .circle__container .row:nth-child(1) {
+    justify-content: space-around;
+  }
+  .circle__container .row:nth-child(2) {
+    justify-content: space-between;
+  }
+  .circle__container .row:nth-child(3) {
+    justify-content: space-around;
+  }
+  .fas {
+    display: flex;
+  }
+  .fa-quote-right {
+    flex-direction: row-reverse;
+    padding-top: 10rem;
+  }
 }
