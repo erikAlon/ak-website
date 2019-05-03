@@ -67,28 +67,11 @@
   - On add to cart mutation update:
     - user cart item id
       - user cart item quantity
+      - user cart item size
       - user cart item price
 
 ** I have a cart instance <br/>
 ** Authenticated guest to keep track of purchases {with facebook login/ jws login token from verified credentials} <br/>
-
-#### Front
-
-- img:
-
-  - merchandise
-
-    - div:
-      - price
-      - description
-    - button:
-
-      - add to cart
-      - quantity to add to cart
-
-        - div:
-
-          - quantity
 
 ### Page: Biography
 
@@ -114,36 +97,6 @@
 - On scroll to blog tag
   - pull from database
 
-#### Front
-
-- ul:
-  - li:
-    - tracks
-      - img:
-        - track pic
-      - div:
-        - title
-      - img:
-        - play/ pause button with event trigger
-- ul:
-  - li:
-    - img:
-      - instagram pic
-- ul:
-  - li:
-    - div:
-      - twitter tweet
-- ul:
-  - li:
-    - div:
-      - blog
-        - h1:
-          - title
-        - h2:
-          - date
-        - p:
-          - description
-
 \*\* Instagram (horizontal), Twitter (vertical), Soundcloud (vertical)) feed + Blog post feed
 
 ### Page: Gallery
@@ -157,26 +110,11 @@
 #### Back
 
 - On form submit
+
   - Mutate file posting on server
+
     - Convert to audio/ogg format
     - POST/ UPDATE audio file to google drive
-
-#### Front
-
-- (Use modal to announce submission complete)
-
-  - (Refresh page)
-
-- div:
-  - h1:
-    - outro
-  - h1:
-    - menu
-  - form:
-    - input fields
-    - button
-- div:
-  - Background image of producer
 
 # 🎧\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_🎧\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_🎧\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_🎧
 
@@ -223,7 +161,7 @@ Web development ideas and points. <br />
 
 # 🎧\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_🎧\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_🎧\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_🎧
 
-# Flow
+# Client Flow
 
 1. Client sends file to AK as email to see what expectations the client has
 

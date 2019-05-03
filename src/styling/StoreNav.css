@@ -1,0 +1,55 @@
+@media only screen and (min-width: 960px) {
+  .storeNav {
+    position: fixed;
+    top: 20rem;
+    background-color: rgba(5, 5, 5, 0.74);
+    box-shadow: 0 0 20px 10px black;
+    border-radius: 20px;
+    width: 150px;
+    height: 575px;
+    padding-top: 1.25rem;
+  }
+  .storeNav > .row {
+    padding-bottom: 5rem;
+    width: 100px;
+    justify-content: center;
+  }
+  .storeNav button {
+    background: none;
+    border: none;
+    color: white;
+    width: 50px;
+    height: 50px;
+    background-size: 50px;
+  }
+  .storeNav button span {
+    top: 3rem;
+    background: none;
+    white-space: nowrap;
+    position: relative;
+  }
+  .storeNav #hat {
+    background-image: url("../images/hat2.png");
+  }
+  .storeNav #hoodie {
+    background-image: url("../images/sweatshirt3.png");
+  }
+  .storeNav #hoodie span {
+    background: none;
+    right: 0.4rem;
+  }
+  .storeNav #tshirt {
+    background-image: url("../images/tshirt2.png");
+  }
+  .storeNav #tshirt span {
+    background: none;
+    right: 0.4rem;
+  }
+  .storeNav #acc {
+    background-image: url("../images/acc.png");
+  }
+  .storeNav #acc span {
+    background: none;
+    right: 1rem;
+  }
+}
