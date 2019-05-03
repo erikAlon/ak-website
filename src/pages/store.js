@@ -1,6 +1,7 @@
 import React from "react"
 import Layout from "../components/layout"
-import { Link } from "gatsby"
+import { Link, graphql } from "gatsby"
+import { Img } from "gatsby-image"
 import { Container, Row, Col, Card } from "react-bootstrap"
 import StoreNav from "../components/StoreNav"
 import "../styling/store.css"
@@ -37,10 +38,10 @@ class Store extends React.Component {
       <Container className="merchDisplay">
         {/*Map through first set of merch list here */}
         <Row className="modelPlay">
-          <Col md={{ span: 2, offset: 1 }}>1</Col>
-          <Col md={{ span: 2, offset: 1 }}>2</Col>
-          <Col md={{ span: 2, offset: 1 }}>3</Col>
-          <Col md={{ span: 2, offset: 1 }}>4</Col>
+          <Col md={{ span: 2 }}>1</Col>
+          <Col md={{ span: 2 }}>2</Col>
+          <Col md={{ span: 2 }}>3</Col>
+          <Col md={{ span: 2 }}>4</Col>
         </Row>
         {/*Map through second set of merch list here */}
       </Container>
