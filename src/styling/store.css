@@ -1,4 +1,12 @@
-.cartLink {
-  position: fixed;
-  right: 0;
+@media only screen and (min-width: 960px) {
+  .cartLink {
+    position: fixed;
+    color: white;
+    top: 20rem;
+    right: 5rem;
+  }
+  .cartLink:hover {
+    text-decoration: none;
+    color: white;
+  }
 }

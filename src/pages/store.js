@@ -2,8 +2,6 @@ import React from "react"
 import Layout from "../components/layout"
 import { Link } from "gatsby"
 import { Container, Row, Col, Card } from "react-bootstrap"
-import cart from "./cart" // link to cart here
-import merch from "./merch" // link to merch here
 import StoreNav from "../components/StoreNav"
 import "../styling/store.css"
 
@@ -35,7 +33,18 @@ class Store extends React.Component {
     // map through sku list and get first item pic from each unique sku by first 2 numbers
     // display each item as card
     // each card gets a link to merch
-    return <div>hello showItems</div>
+    return (
+      <Container className="merchDisplay">
+        {/*Map through first set of merch list here */}
+        <Row className="modelPlay">
+          <Col md={{ span: 2, offset: 1 }}>1</Col>
+          <Col md={{ span: 2, offset: 1 }}>2</Col>
+          <Col md={{ span: 2, offset: 1 }}>3</Col>
+          <Col md={{ span: 2, offset: 1 }}>4</Col>
+        </Row>
+        {/*Map through second set of merch list here */}
+      </Container>
+    )
   }
 
   toggleItemView = ({ target: { id } }) => {
@@ -51,8 +60,8 @@ class Store extends React.Component {
           selected={this.state.clotheView}
           toggleItemView={this.toggleItemView}
         />
-        <Container className="merchDisplay">holy goddami shi cid</Container>
-        <Link className="cartLink" to="cart">
+        {this.showItems()}
+        <Link className="cartLink" to="cart" state={this.state}>
           <i class="fas fa-shopping-cart" />
         </Link>
       </Layout>
