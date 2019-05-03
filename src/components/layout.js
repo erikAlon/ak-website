@@ -34,7 +34,6 @@ const Layout = ({ children }) => (
         id="ak"
       >
         <Header siteTitle={data.site.siteMetadata.title} />
-
         <div className="layout__main">
           <main style={{ zIndex: 1 }}>{children}</main>
           <footer className="layout__foot">

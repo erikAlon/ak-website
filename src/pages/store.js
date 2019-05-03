@@ -36,14 +36,15 @@ class Store extends React.Component {
     // each card gets a link to merch
     return (
       <Container className="merchDisplay">
-        {/*Map through first set of merch list here */}
+        &lt; Map through 6 items of merch list here &gt;
         <Row className="modelPlay">
           <Col md={{ span: 2 }}>1</Col>
           <Col md={{ span: 2 }}>2</Col>
           <Col md={{ span: 2 }}>3</Col>
           <Col md={{ span: 2 }}>4</Col>
         </Row>
-        {/*Map through second set of merch list here */}
+        &lt; Map through rest of merch list here, each row having 3 merch to
+        display &gt;
       </Container>
     )
   }
